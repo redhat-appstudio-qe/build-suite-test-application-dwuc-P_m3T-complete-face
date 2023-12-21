@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pac-nsxlfn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-qdvw-tenant/build-suite-test-application-dwuc/test-component-pac-nsxlfn@sha256:f48c28bfee28e5135bb84534f61e59c18e770b3014bf5070d1df9b1f7dc0807b
+        name: my-nginx
+        resources: {}
+status: {}
